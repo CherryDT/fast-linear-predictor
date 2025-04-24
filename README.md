@@ -4,7 +4,7 @@
 
 **fast-linear-predictor** is a high-performance tool for cracking and predicting future outputs of GF(2)-linear pseudorandom number generators (PRNGs), such as the Mersenne Twister or linear congruential generators, even when only a masked subset of output bits is available.
 
-For example, if you have some application that uses `random.getrandbits` in Python (which is a linear PRNG) in combination with some bitmask, xor or shift, e.g. `random.getrandbits(32) & 0xFF`, and you can gather of ~40,000 such consecutive outputs, you can then predict the next outputs.
+For example, if you have some application that uses `random.getrandbits` in Python (which is a linear PRNG) in combination with some bitmask, xor or shift, e.g. `random.getrandbits(32) & 0xFF`, and you can gather ~40,000 of such consecutive outputs, you can then predict the next outputs.
 
 (This was created for a CTF in which I encountered such a situation where symbolic Mersenne “untwisters” failed because the runtime became extremely high when only a few bits per input value were available and the upper bits were unknown.)
 
