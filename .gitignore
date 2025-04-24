@@ -1,0 +1,18 @@
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore build artifacts
+fast-linear-predictor
+*.o
+*.exe
+
+# Ignore system files
+.DS_Store
+Thumbs.db
